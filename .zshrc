@@ -39,4 +39,4 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 
 # Set preferred editor
-export EDITOR='nvim'
+export EDITOR="nvim"
