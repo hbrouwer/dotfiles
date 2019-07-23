@@ -1,0 +1,116 @@
+#### Email account
+
+# Real name
+set realname="Harm Brouwer"
+
+# Default from
+set from="me@hbrouwer.eu"
+
+# Alternates
+alternates ^me@hbrouwer.eu$ ^brouwer.harm@gmail.com$ ^brouwer@coli.uni-saarland.de$
+
+# Username for IMAP
+set imap_user="brouwer.harm@gmail.com"
+
+# Set mail folder
+set folder="imaps://imap.gmail.com:993"
+
+# Automatically fetch IMAP mailboxes
+set imap_check_subscribed
+
+# Location of inbox
+set spoolfile="+INBOX"
+
+# Location of drafts
+set postponed="+[Gmail]/Drafts"
+
+# Gmail saves outgoing mail by default, hence no need to record
+set record=""
+
+# Configure SMTP
+set smtp_url="smtps://brouwer.harm@gmail.com@smtp.gmail.com:465"
+
+# Decrypt and source IMAP and STMP passwords
+source "gpg -dq $HOME/.mutt/passwords.gpg |"
+
+#### General 
+
+# Set header cache backend
+set header_cache_backend="tokyocabinet"
+#set header_cache_backend="kyotocabinet"
+
+# Set header cache folder
+set header_cache="~/.mutt/cache/headers"
+
+# Set message cache folder
+set message_cachedir="~/.mutt/cache/bodies"
+
+# Set sorting order
+set sort=reverse-date-received
+
+# Set editor
+set editor="nvim"
+
+# Add current 'from' header to statusbar
+set my_status_format=$status_format
+set status_format="---$from$my_status_format"
+
+# Change from header with <escape>+<n>
+macro index,compose \e1 "<enter-command>set from=me@hbrouwer.eu<enter><enter-command>set status_format=\"---me@hbrouwer.eu$my_status_format\"<enter>" "set from: me@hbrouwer.eu"
+macro index,compose \e2 "<enter-command>set from=brouwer.harm@gmail.com<enter><enter-command>set status_format=\"---brouwer.harm@gmail.com$my_status_format\"<enter>" "set from: brouwer.harm@gmail.com"
+macro index,compose \e3 "<enter-command>set from=brouwer@coli.uni-saarland.de<enter><enter-command>set status_format=\"---brouwer@coli.uni-saarland.de$my_status_format\"<enter>" "set from: brouwer@coli.uni-saarland.de"
+
+# Reply with 'from' address to which mail was sent 
+set reverse_name=yes
+
+# Color scheme
+source ".mutt/dracula.muttrc"
+
+#### Sidebar
+
+# Sidebar visibility
+set sidebar_visible=no
+
+# Sidebar width
+set sidebar_width=40
+
+# Enable extended mailbox mode to calculate total, new, and flagged
+# message counts for each mailbox.
+set mail_check_stats
+
+# Display the Sidebar mailboxes using this format string.
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
+
+# Do not sort mailboxes
+set sidebar_sort_method="unsorted"
+
+# Move the highlight to the previous mailbox
+bind index,pager \Cp sidebar-prev
+
+# Move the highlight to the next mailbox
+bind index,pager \Cn sidebar-next
+
+# Open the highlighted mailbox
+bind index,pager \Cx sidebar-open
+
+# Toggle the visibility of the Sidebar
+bind index,pager \Cb sidebar-toggle-visible
+
+#### Progress bar
+
+# Set the color of the progress bar
+# White text on a red background
+color progress white red
+
+#### abook
+
+# Query abook
+set query_command="abook --mutt-query '%s'"
+
+# Add sender to abook
+macro index,pager a "|abook --add-email\n" 'add sender to abook'
+
+#### MIME
+
+# Automatically view certain MIME types
+auto_view text/html
