@@ -21,10 +21,10 @@ ZSH_THEME="robbyrussell"
 # Load plugins
 case `uname` in
         Darwin)
-        plugins=(git tmux iterm2 osx macports)
+        plugins=(tmux osx z)
         ;;
         Linux)
-        plugins=(git tmux)
+        plugins=(tmux z)
 esac
 
 # Autostart tmux
