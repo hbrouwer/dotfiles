@@ -102,14 +102,12 @@ set showmode
 " Show (partial) command in the last line of the screen
 set showcmd
 
-" Set leader
-let mapleader=","
-
 " When on, splitting a window will put the new window below the current
 " one
 set splitbelow
 
-" Built-in terminal (nvim)
+" Bind built-in terminal (nvim) to ',t'
+let mapleader=","
 map <leader>t :10sp<CR>:terminal<CR>i
 
 " Set backspace behaviour to 'indent,eol,start':
@@ -161,8 +159,18 @@ Plug 'git@github.com:tpope/vim-fugitive.git'
 Plug 'git@github.com:junegunn/fzf.git'
 Plug 'git@github.com:junegunn/fzf.vim.git'
 
-" bind fzf to ;
-map ; :Files<cr>
+" fzf keybindings: 
+" ',b': search buffers
+" ',c': search commands
+" ',f': search files
+" ',m': search key mappings
+" ',w': search windows
+let mapleader=","
+map ,b :Buffers<CR>
+map ,c :Commands<CR>
+map ,f :Files<CR>
+map ,m :Maps<CR>
+map ,w :Windows<CR>
 
 " iceberg
 Plug 'git@github.com:cocopon/iceberg.vim.git'
