@@ -164,12 +164,14 @@ Plug 'git@github.com:junegunn/fzf.vim.git'
 " ',c': search commands
 " ',f': search files
 " ',m': search key mappings
+" ',s': search filetypes
 " ',w': search windows
 let mapleader=","
 map ,b :Buffers<CR>
 map ,c :Commands<CR>
 map ,f :Files<CR>
 map ,m :Maps<CR>
+map ,s :Filetypes<CR>
 map ,w :Windows<CR>
 
 " iceberg
