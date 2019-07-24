@@ -1,5 +1,3 @@
-#### General configuration
-
 # Export $PATH
 case `uname` in
 	Darwin)
@@ -7,13 +5,7 @@ case `uname` in
 esac 
 
 # Path to oh-my-zsh
-case `uname` in
-        Darwin)
-        export ZSH="/Users/harm/.oh-my-zsh"
-        ;;
-        Linux)
-        export ZSH="/home/harm/.oh-my-zsh"
-esac
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set zsh theme
 ZSH_THEME="robbyrussell"
@@ -33,8 +25,6 @@ ZSH_TMUX_AUTOSTART="true"
 
 # Source oh-my-zsh.sh
 source $ZSH/oh-my-zsh.sh
-
-#### User configuration
 
 # Set language environment
 export LANG=en_US.UTF-8
