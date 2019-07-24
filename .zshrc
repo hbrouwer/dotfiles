@@ -21,7 +21,8 @@ ZSH_THEME="robbyrussell"
 # Load plugins
 case `uname` in
         Darwin)
-        plugins=(tmux osx z)
+        plugins=(tmux osx fzf z)
+        export FZF_BASE=/opt/local/share/fzf
         ;;
         Linux)
         plugins=(tmux z)
