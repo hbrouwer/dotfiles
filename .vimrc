@@ -106,6 +106,9 @@ set showcmd
 " one
 set splitbelow
 
+" Enable clipboard integration
+set clipboard=unnamedplus
+
 " Bind built-in terminal (nvim) to ',t'
 let mapleader=","
 map <leader>t :10sp<CR>:terminal<CR>i
