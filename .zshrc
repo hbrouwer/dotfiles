@@ -28,6 +28,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Set language environment
 export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Set preferred editor
 export EDITOR="nvim"
