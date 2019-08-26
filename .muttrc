@@ -63,6 +63,9 @@ macro index,compose \e3 "<enter-command>set from=brouwer@coli.uni-saarland.de<en
 # Reply with 'from' address to which mail was sent 
 set reverse_name=yes
 
+# Signature
+set signature=".mutt/signature"
+
 # Color scheme
 source ".mutt/dracula.muttrc"
 
