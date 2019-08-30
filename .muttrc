@@ -122,3 +122,8 @@ macro index,pager \Cu "|urlview\n" "show URL"
 
 # Automatically view certain MIME types
 auto_view text/html
+
+#### Notifications
+
+# Run notification script when receiving new mail
+set new_mail_command="sh ~/.mutt/notify.sh %n %u %v"
