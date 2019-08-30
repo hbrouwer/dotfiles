@@ -11,5 +11,5 @@ case `uname` in
         -- "$MESSAGE" "$TITLE" "$SUBTITLE"
         ;;
         Linux)
-        notify-send $TITLE $MESSAGE &
+        notify-send "$TITLE" "$MESSAGE"
 esac
