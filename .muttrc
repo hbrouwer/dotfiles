@@ -82,7 +82,7 @@ set sidebar_width=40
 set mail_check_stats
 
 # Display the Sidebar mailboxes using this format string.
-set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
+set sidebar_format="%B%?F? [%F]?%* %?N?%N/?%S"
 
 # Do not sort mailboxes
 set sidebar_sort_method="unsorted"
