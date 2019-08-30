@@ -116,7 +116,7 @@ macro index,pager a "|abook --add-email\n" "add sender to abook"
 #### urlview
 
 # Show URL
-macro index,pager \cu "|urlview\n" "show URL"
+macro index,pager \Cu "|urlview\n" "show URL"
 
 #### MIME
 
