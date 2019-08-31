@@ -46,7 +46,13 @@ set header_cache="~/.mutt/cache/headers"
 set message_cachedir="~/.mutt/cache/bodies"
 
 # Set sorting order
-set sort=reverse-date-received
+set sort="reverse-threads"
+
+# Set thread sorting order
+set sort_aux="last-date-received"
+
+# Set strict threading
+set strict_threads="yes"
 
 # Set editor
 set editor="nvim"
