@@ -183,6 +183,9 @@ Plug 'git@github.com:cocopon/iceberg.vim.git'
 " NERDTree
 Plug 'git@github.com:scrooloose/nerdtree.git'
 
+" NERD Commenter
+Plug 'git@github.com:scrooloose/nerdcommenter.git'
+
 " signify
 Plug 'git@github.com:mhinz/vim-signify.git'
 
