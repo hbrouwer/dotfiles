@@ -116,6 +116,12 @@ color progress white red
 # Query abook
 set query_command="abook --mutt-query '%s'"
 
+# Complete address with query (default: ^T)
+bind editor <Tab> complete-query
+
+# Complete filename or alias (default: <Tab>)
+bind editor ^T complete
+
 # Add sender to abook
 macro index,pager a "|abook --add-email\n" "add sender to abook"
 
