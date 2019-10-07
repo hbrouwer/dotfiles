@@ -120,6 +120,12 @@ map <leader>t :10sp<CR>:terminal<CR>i
 "         stop once at the start of insert. 
 set backspace=indent,eol,start
 
+" Buffer navigation:
+" Ctrl+s + Left arrow: previous buffer
+" Ctrl+s + Right arrow: next buffer
+map <C-s><Left> :bp<CR>
+map <C-s><Right> :bn<CR>
+
 " Window navigation:
 " Shift + Up arrow: window up
 " Shift + Down arrow: window down
