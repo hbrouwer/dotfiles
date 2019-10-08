@@ -121,8 +121,12 @@ map <leader>t :10sp<CR>:terminal<CR>i
 set backspace=indent,eol,start
 
 " Buffer navigation:
+" Ctrl+w + Up arrow: first buffer
+" Ctrl+w + Down arrow: last buffer
 " Ctrl+w + Left arrow: previous buffer
 " Ctrl+w + Right arrow: next buffer
+map <C-w><Up> :br<CR>
+map <C-w><Down> :bl<CR>
 map <C-w><Left> :bp<CR>
 map <C-w><Right> :bn<CR>
 
