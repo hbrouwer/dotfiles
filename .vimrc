@@ -121,10 +121,10 @@ map <leader>t :10sp<CR>:terminal<CR>i
 set backspace=indent,eol,start
 
 " Buffer navigation:
-" Ctrl+s + Left arrow: previous buffer
-" Ctrl+s + Right arrow: next buffer
-map <C-s><Left> :bp<CR>
-map <C-s><Right> :bn<CR>
+" Ctrl+w + Left arrow: previous buffer
+" Ctrl+w + Right arrow: next buffer
+map <C-w><Left> :bp<CR>
+map <C-w><Right> :bn<CR>
 
 " Window navigation:
 " Shift + Up arrow: window up
@@ -137,16 +137,16 @@ map <S-Left> :wincmd h<CR>
 map <S-Right> :wincmd l<CR>
 
 " Tab navigation:
-" Ctrl+t + ?: open new tab
-" Ctrl+t + Up arrow: first tab
-" Ctrl+t + Down arrow: last tab
-" Ctrl+t + Left arrow: previous tab
-" Ctrl+t + Right arrow: next tab
-map <C-t>? :tabe<Space>
-map <C-t><Up> :tabr<CR>
-map <C-t><Down> :tabl<CR>
-map <C-t><Left> :tabp<CR>
-map <C-t><Right> :tabn<CR>
+" Ctrl+s + ?: open new tab
+" Ctrl+s + Up arrow: first tab
+" Ctrl+s + Down arrow: last tab
+" Ctrl+s + Left arrow: previous tab
+" Ctrl+s + Right arrow: next tab
+map <C-s>? :tabe<Space>
+map <C-s><Up> :tabr<CR>
+map <C-s><Down> :tabl<CR>
+map <C-s><Left> :tabp<CR>
+map <C-s><Right> :tabn<CR>
 
 """" plug.vim
 
