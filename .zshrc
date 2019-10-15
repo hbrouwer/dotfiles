@@ -8,7 +8,7 @@ esac
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set zsh theme
-ZSH_THEME="robbyrussell"
+ZSH_THEME="trapd00r"
 
 # Load plugins
 case `uname` in
