@@ -13,7 +13,8 @@ ZSH_THEME="trapd00r"
 # Load plugins
 case `uname` in
         Darwin)
-        plugins=(osx fzf z)
+        plugins=(tmux osx fzf z)
+        export TERM=screen-256color
         export FZF_BASE=/opt/local/share/fzf
         ;;
         Linux)
