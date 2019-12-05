@@ -73,7 +73,7 @@ set reverse_name=yes
 set signature=".mutt/signature"
 
 # Color scheme
-source ".mutt/colors/iceberg.muttrc"
+source ".mutt/colors/dracula.muttrc"
 
 #### Sidebar
 
