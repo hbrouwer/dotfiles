@@ -187,11 +187,8 @@ map ,m :Maps<CR>
 map ,s :Filetypes<CR>
 map ,w :Windows<CR>
 
-" Orbital
-Plug 'git@github.com:fcpg/vim-orbital.git'
-
-" gotham
-" Plug 'git@github.com:whatyouhide/vim-gotham.git'
+" dracula
+Plug 'git@github.com:dracula/vim.git', { 'as': 'dracula' }
 
 " iceberg
 Plug 'git@github.com:cocopon/iceberg.vim.git'
@@ -209,4 +206,4 @@ Plug 'git@github.com:mhinz/vim-signify.git'
 call plug#end()
 
 """" colors
-colorscheme orbital
+colorscheme dracula
