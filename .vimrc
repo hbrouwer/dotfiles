@@ -187,6 +187,9 @@ map ,m :Maps<CR>
 map ,s :Filetypes<CR>
 map ,w :Windows<CR>
 
+" gotham
+Plug 'git@github.com:whatyouhide/vim-gotham.git'
+
 " iceberg
 Plug 'git@github.com:cocopon/iceberg.vim.git'
 
@@ -203,4 +206,4 @@ Plug 'git@github.com:mhinz/vim-signify.git'
 call plug#end()
 
 """" colors
-colorscheme iceberg
+colorscheme gotham256
