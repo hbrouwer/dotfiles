@@ -8,7 +8,7 @@ esac
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set zsh theme
-ZSH_THEME="wedisagree"
+ZSH_THEME="clean"
 
 # Load plugins
 case `uname` in
