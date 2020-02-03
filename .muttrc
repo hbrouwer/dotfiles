@@ -137,4 +137,4 @@ auto_view text/html
 #### Notifications
 
 # Run notification script when receiving new mail
-set new_mail_command="sh ~/.mutt/notify.sh %n %u %v"
+#set new_mail_command="sh ~/.mutt/notify.sh %n %u %v"
