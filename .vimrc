@@ -209,4 +209,5 @@ Plug 'git@github.com:mhinz/vim-signify.git'
 call plug#end()
 
 """" colors
-colorscheme spacecamp
+
+colorscheme spacecamp_lite
