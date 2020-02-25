@@ -193,6 +193,9 @@ Plug 'git@github.com:dracula/vim.git', { 'as': 'dracula' }
 " iceberg
 Plug 'git@github.com:cocopon/iceberg.vim.git'
 
+" SpaceCamp
+Plug 'git@github.com:jaredgorski/spacecamp.git'
+
 " NERDTree
 Plug 'git@github.com:scrooloose/nerdtree.git'
 
@@ -206,4 +209,4 @@ Plug 'git@github.com:mhinz/vim-signify.git'
 call plug#end()
 
 """" colors
-colorscheme dracula
+colorscheme spacecamp
