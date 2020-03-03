@@ -18,7 +18,7 @@ case `uname` in
         export FZF_BASE=/opt/local/share/fzf
         ;;
         Linux)
-        plugins=(tmux z)
+        plugins=(tmux fzf z)
 esac
 
 # Autostart tmux
