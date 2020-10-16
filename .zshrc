@@ -1,4 +1,5 @@
 # Export $PATH
+export PATH=$HOME/bin:$PATH
 case `uname` in
 	Darwin)
 	export PATH=/opt/local/bin:$PATH
