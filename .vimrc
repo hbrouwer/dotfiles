@@ -196,12 +196,11 @@ Plug 'git@github.com:scrooloose/nerdcommenter.git'
 " signify
 Plug 'git@github.com:mhinz/vim-signify.git'
 
-" Solarized 8
-Plug 'git@github.com:lifepillar/vim-solarized8'
+" SpaceCamp
+Plug 'git@github.com:jaredgorski/spacecamp.git'
 
 " Initialize plugin system
 call plug#end()
 
 """" colors
-set background=light
-colorscheme solarized8
+colorscheme spacecamp_lite
