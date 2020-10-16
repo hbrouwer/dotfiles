@@ -203,6 +203,5 @@ Plug 'git@github.com:lifepillar/vim-solarized8'
 call plug#end()
 
 """" colors
-set termguicolors
 set background=light
 colorscheme solarized8
