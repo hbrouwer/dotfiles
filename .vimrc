@@ -196,12 +196,13 @@ Plug 'git@github.com:scrooloose/nerdcommenter.git'
 " signify
 Plug 'git@github.com:mhinz/vim-signify.git'
 
-" Solarized
-Plug 'git@github.com:altercation/vim-colors-solarized.git'
+" Solarized 8
+Plug 'git@github.com:lifepillar/vim-solarized8'
 
 " Initialize plugin system
 call plug#end()
 
 """" colors
-set background=dark
-colorscheme solarized
+set termguicolors
+set background=light
+colorscheme solarized8
