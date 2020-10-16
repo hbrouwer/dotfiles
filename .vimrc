@@ -187,15 +187,6 @@ map ,m :Maps<CR>
 map ,s :Filetypes<CR>
 map ,w :Windows<CR>
 
-" dracula
-Plug 'git@github.com:dracula/vim.git', { 'as': 'dracula' }
-
-" iceberg
-Plug 'git@github.com:cocopon/iceberg.vim.git'
-
-" SpaceCamp
-Plug 'git@github.com:jaredgorski/spacecamp.git'
-
 " NERDTree
 Plug 'git@github.com:scrooloose/nerdtree.git'
 
@@ -205,9 +196,12 @@ Plug 'git@github.com:scrooloose/nerdcommenter.git'
 " signify
 Plug 'git@github.com:mhinz/vim-signify.git'
 
+" Solarized
+Plug 'git@github.com:altercation/vim-colors-solarized.git'
+
 " Initialize plugin system
 call plug#end()
 
 """" colors
-
-colorscheme spacecamp_lite
+set background=dark
+colorscheme solarized
