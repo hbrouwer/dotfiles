@@ -159,11 +159,12 @@ map <C-s><Right> :tabn<CR>
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
+" base16-vim
+Plug 'git@github.com:chriskempson/base16-vim'
+
 " airline
 Plug 'git@github.com:vim-airline/vim-airline.git'
-
-" dracula
-" Plug 'git@github.com:dracula/vim.git', { 'as': 'dracula' }
+Plug 'git@github.com:vim-airline/vim-airline-themes.git'
 
 " fugitive
 Plug 'git@github.com:tpope/vim-fugitive.git'
@@ -196,11 +197,9 @@ Plug 'git@github.com:scrooloose/nerdcommenter.git'
 " signify
 Plug 'git@github.com:mhinz/vim-signify.git'
 
-" SpaceCamp
-Plug 'git@github.com:jaredgorski/spacecamp.git'
-
 " Initialize plugin system
 call plug#end()
 
 """" colors
-colorscheme spacecamp_lite
+let g:airline_theme='base16_3024'
+colorscheme base16-3024
