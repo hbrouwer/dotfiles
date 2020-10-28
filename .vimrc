@@ -203,3 +203,6 @@ call plug#end()
 """" colors
 let g:airline_theme='base16_3024'
 colorscheme base16-3024
+
+" Enable 24-bit RGB colors
+set termguicolors
