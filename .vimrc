@@ -159,7 +159,7 @@ map <C-s><Right> :tabn<CR>
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-" base16-vim
+" base16
 Plug 'git@github.com:chriskempson/base16-vim'
 
 " airline
