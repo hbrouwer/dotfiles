@@ -160,18 +160,18 @@ map <C-s><Right> :tabn<CR>
 call plug#begin('~/.vim/plugged')
 
 " base16
-Plug 'git@github.com:chriskempson/base16-vim'
+Plug 'git://github.com/chriskempson/base16-vim'
 
 " airline
-Plug 'git@github.com:vim-airline/vim-airline.git'
-Plug 'git@github.com:vim-airline/vim-airline-themes.git'
+Plug 'git://github.com/vim-airline/vim-airline.git'
+Plug 'git://github.com/vim-airline/vim-airline-themes.git'
 
 " fugitive
-Plug 'git@github.com:tpope/vim-fugitive.git'
+Plug 'git://github.com/tpope/vim-fugitive.git'
 
 " fzf
-Plug 'git@github.com:junegunn/fzf.git'
-Plug 'git@github.com:junegunn/fzf.vim.git'
+Plug 'git://github.com/junegunn/fzf.git'
+Plug 'git://github.com/junegunn/fzf.vim.git'
 
 " fzf keybindings: 
 " ',b': search buffers
@@ -189,13 +189,13 @@ map ,s :Filetypes<CR>
 map ,w :Windows<CR>
 
 " NERDTree
-Plug 'git@github.com:scrooloose/nerdtree.git'
+Plug 'git://github.com/scrooloose/nerdtree.git'
 
 " NERD Commenter
-Plug 'git@github.com:scrooloose/nerdcommenter.git'
+Plug 'git://github.com/scrooloose/nerdcommenter.git'
 
 " signify
-Plug 'git@github.com:mhinz/vim-signify.git'
+Plug 'git://github.com/mhinz/vim-signify.git'
 
 " Initialize plugin system
 call plug#end()
