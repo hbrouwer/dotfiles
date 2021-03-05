@@ -188,6 +188,9 @@ map ,m :Maps<CR>
 map ,s :Filetypes<CR>
 map ,w :Windows<CR>
 
+" Julia
+Plug 'git://github.com/JuliaEditorSupport/julia-vim.git'
+
 " NERDTree
 Plug 'git://github.com/scrooloose/nerdtree.git'
 
