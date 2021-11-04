@@ -9,7 +9,7 @@ esac
 export ZSH="$HOME/.oh-my-zsh"
 
 # Set zsh theme
-ZSH_THEME="clean"
+ZSH_THEME="sorin"
 
 # Load plugins
 case `uname` in
