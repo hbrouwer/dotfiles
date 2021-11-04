@@ -159,8 +159,8 @@ map <C-s><Right> :tabn<CR>
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-" base16
-Plug 'git://github.com/chriskempson/base16-vim'
+" Nord
+Plug 'git://github.com/arcticicestudio/nord-vim.git'
 
 " airline
 Plug 'git://github.com/vim-airline/vim-airline.git'
@@ -204,8 +204,8 @@ Plug 'git://github.com/mhinz/vim-signify.git'
 call plug#end()
 
 """" colors
-let g:airline_theme='base16_3024'
-colorscheme base16-3024
+let g:airline_theme='nord'
+colorscheme nord
 
 " Enable 24-bit RGB colors
 set termguicolors
