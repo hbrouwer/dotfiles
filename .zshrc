@@ -14,7 +14,7 @@ ZSH_THEME="sorin"
 # Load plugins
 case `uname` in
         Darwin)
-        plugins=(tmux osx fzf z)
+        plugins=(tmux macos fzf z)
         export TERM=screen-256color
         export FZF_BASE=/opt/local/share/fzf
         ;;
