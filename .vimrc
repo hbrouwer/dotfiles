@@ -160,18 +160,18 @@ map <C-s><Right> :tabn<CR>
 call plug#begin('~/.vim/plugged')
 
 " Nord
-Plug 'git://github.com/arcticicestudio/nord-vim.git'
+Plug 'https://github.com/arcticicestudio/nord-vim.git'
 
 " airline
-Plug 'git://github.com/vim-airline/vim-airline.git'
-Plug 'git://github.com/vim-airline/vim-airline-themes.git'
+Plug 'https://github.com/vim-airline/vim-airline.git'
+Plug 'https://github.com/vim-airline/vim-airline-themes.git'
 
 " fugitive
-Plug 'git://github.com/tpope/vim-fugitive.git'
+Plug 'https://github.com/tpope/vim-fugitive.git'
 
 " fzf
-Plug 'git://github.com/junegunn/fzf.git'
-Plug 'git://github.com/junegunn/fzf.vim.git'
+Plug 'https://github.com/junegunn/fzf.git'
+Plug 'https://github.com/junegunn/fzf.vim.git'
 
 " fzf keybindings: 
 " ',b': search buffers
@@ -188,17 +188,14 @@ map ,m :Maps<CR>
 map ,s :Filetypes<CR>
 map ,w :Windows<CR>
 
-" Julia
-Plug 'git://github.com/JuliaEditorSupport/julia-vim.git'
-
 " NERDTree
-Plug 'git://github.com/scrooloose/nerdtree.git'
+Plug 'https://github.com/scrooloose/nerdtree.git'
 
 " NERD Commenter
-Plug 'git://github.com/scrooloose/nerdcommenter.git'
+Plug 'https://github.com/scrooloose/nerdcommenter.git'
 
 " signify
-Plug 'git://github.com/mhinz/vim-signify.git'
+Plug 'https://github.com/mhinz/vim-signify.git'
 
 " Initialize plugin system
 call plug#end()
