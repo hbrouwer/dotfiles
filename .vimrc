@@ -109,7 +109,7 @@ set splitbelow
 " Enable clipboard integration
 set clipboard=unnamedplus
 
-" Bind built-in terminal (nvim) to ',t'
+" Bind built-in terminal (nvim) to ',t' (Ctrl+\ Ctrl+n to quit)
 let mapleader=","
 map <leader>t :10sp<CR>:terminal<CR>i
 
