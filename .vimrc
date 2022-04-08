@@ -202,7 +202,8 @@ call plug#end()
 
 """" colors
 let g:airline_theme='nord'
-colorscheme nord
+"colorscheme nord
+silent! colorscheme nord
 
 " Enable 24-bit RGB colors
 set termguicolors

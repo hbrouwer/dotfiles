@@ -5,3 +5,4 @@ mkdir -p ~/.vim/.undo
 mkdir -p ~/.vim/.backup
 mkdir -p ~/.vim/.swp
 cp .vimrc ~/.vimrc
+vim -c ":PlugInstall|:qa"
