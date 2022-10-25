@@ -34,3 +34,6 @@ export LC_ALL=en_US.UTF-8
 
 # Set preferred editor
 export EDITOR="nvim"
+
+# Disable tmux status-right (for catppuccin)
+tmux set-option -g status-right ""
