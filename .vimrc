@@ -160,11 +160,17 @@ map <C-s><Right> :tabn<CR>
 call plug#begin('~/.vim/plugged')
 
 " Nord
-Plug 'https://github.com/arcticicestudio/nord-vim.git'
+"Plug 'https://github.com/arcticicestudio/nord-vim.git'
 
 " airline
-Plug 'https://github.com/vim-airline/vim-airline.git'
-Plug 'https://github.com/vim-airline/vim-airline-themes.git'
+"Plug 'https://github.com/vim-airline/vim-airline.git'
+"Plug 'https://github.com/vim-airline/vim-airline-themes.git'
+
+" catppuccin
+Plug 'https://github.com/catppuccin/vim.git', { 'as': 'catppuccin' }
+
+" lightline
+Plug 'https://github.com/itchyny/lightline.vim.git'
 
 " fugitive
 Plug 'https://github.com/tpope/vim-fugitive.git'
@@ -201,9 +207,13 @@ Plug 'https://github.com/mhinz/vim-signify.git'
 call plug#end()
 
 """" colors
-let g:airline_theme='nord'
+"let g:airline_theme='nord'
 "colorscheme nord
-silent! colorscheme nord
+"silent! colorscheme nord
+
+let g:lightline = {'colorscheme': 'catppuccin_mocha'}
+"colorscheme catppuccin_mocha
+silent! colorscheme catppuccin_mocha
 
 " Enable 24-bit RGB colors
 set termguicolors
