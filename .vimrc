@@ -179,10 +179,6 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/junegunn/fzf.git'
 Plug 'https://github.com/junegunn/fzf.vim.git'
 
-" markdown
-Plug 'https://github.com/godlygeek/tabular.git'
-Plug 'https://github.com/preservim/vim-markdown.git'
-
 " fzf keybindings: 
 " ',b': search buffers
 " ',c': search commands
@@ -197,6 +193,10 @@ map ,f :Files<CR>
 map ,m :Maps<CR>
 map ,s :Filetypes<CR>
 map ,w :Windows<CR>
+
+" markdown
+Plug 'https://github.com/godlygeek/tabular.git'
+Plug 'https://github.com/preservim/vim-markdown.git'
 
 " NERDTree
 Plug 'https://github.com/scrooloose/nerdtree.git'
