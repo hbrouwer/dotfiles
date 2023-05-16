@@ -179,6 +179,10 @@ Plug 'https://github.com/tpope/vim-fugitive.git'
 Plug 'https://github.com/junegunn/fzf.git'
 Plug 'https://github.com/junegunn/fzf.vim.git'
 
+" markdown
+Plug 'https://github.com/godlygeek/tabular.git'
+Plug 'https://github.com/preservim/vim-markdown.git'
+
 " fzf keybindings: 
 " ',b': search buffers
 " ',c': search commands
