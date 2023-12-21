@@ -217,7 +217,7 @@ call plug#end()
 
 let g:lightline = {'colorscheme': 'catppuccin_mocha'}
 "colorscheme catppuccin_mocha
-silent! colorscheme catppuccin_mocha
+silent! colorscheme catppuccin_frappe
 
 " Enable 24-bit RGB colors
 set termguicolors
