@@ -167,7 +167,10 @@ call plug#begin('~/.vim/plugged')
 "Plug 'https://github.com/vim-airline/vim-airline-themes.git'
 
 " catppuccin
-Plug 'https://github.com/catppuccin/vim.git', { 'as': 'catppuccin' }
+"Plug 'https://github.com/catppuccin/vim.git', { 'as': 'catppuccin' }
+
+" rose-pine
+Plug 'https://github.com/rose-pine/vim.git', { 'as': 'rosepine' }
 
 " lightline
 Plug 'https://github.com/itchyny/lightline.vim.git'
@@ -211,13 +214,12 @@ Plug 'https://github.com/mhinz/vim-signify.git'
 call plug#end()
 
 """" colors
-"let g:airline_theme='nord'
-"colorscheme nord
-"silent! colorscheme nord
-
-let g:lightline = {'colorscheme': 'catppuccin_mocha'}
+"let g:lightline = {'colorscheme': 'catppuccin_mocha'}
 "colorscheme catppuccin_mocha
-silent! colorscheme catppuccin_frappe
+"silent! colorscheme catppuccin_frappe
+
+let g:lightline = {'colorscheme': 'rosepine_moon'}
+colorscheme rosepine_moon
 
 " Enable 24-bit RGB colors
 set termguicolors
