@@ -223,3 +223,7 @@ colorscheme rosepine_moon
 
 " Enable 24-bit RGB colors
 set termguicolors
+
+" Enable secure local configs
+set exrc
+set secure
