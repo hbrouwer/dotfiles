@@ -159,18 +159,21 @@ map <C-s><Right> :tabn<CR>
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
-" Nord
-"Plug 'https://github.com/arcticicestudio/nord-vim.git'
-
 " airline
 "Plug 'https://github.com/vim-airline/vim-airline.git'
 "Plug 'https://github.com/vim-airline/vim-airline-themes.git'
+
+" Nord
+"Plug 'https://github.com/arcticicestudio/nord-vim.git'
 
 " catppuccin
 "Plug 'https://github.com/catppuccin/vim.git', { 'as': 'catppuccin' }
 
 " rose-pine
-Plug 'https://github.com/rose-pine/vim.git', { 'as': 'rosepine' }
+"Plug 'https://github.com/rose-pine/vim.git', { 'as': 'rosepine' }
+
+" everforest
+Plug 'https://github.com/sainnhe/everforest.git'
 
 " lightline
 Plug 'https://github.com/itchyny/lightline.vim.git'
@@ -218,8 +221,11 @@ call plug#end()
 "colorscheme catppuccin_mocha
 "silent! colorscheme catppuccin_frappe
 
-let g:lightline = {'colorscheme': 'rosepine_moon'}
-colorscheme rosepine_moon
+"let g:lightline = {'colorscheme': 'rosepine_moon'}
+"colorscheme rosepine_moon
+
+let g:lightline = {'colorscheme': 'everforest'}
+colorscheme everforest
 
 " Enable 24-bit RGB colors
 set termguicolors
