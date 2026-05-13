@@ -163,15 +163,6 @@ call plug#begin('~/.vim/plugged')
 "Plug 'https://github.com/vim-airline/vim-airline.git'
 "Plug 'https://github.com/vim-airline/vim-airline-themes.git'
 
-" Nord
-"Plug 'https://github.com/arcticicestudio/nord-vim.git'
-
-" catppuccin
-"Plug 'https://github.com/catppuccin/vim.git', { 'as': 'catppuccin' }
-
-" rose-pine
-"Plug 'https://github.com/rose-pine/vim.git', { 'as': 'rosepine' }
-
 " everforest
 Plug 'https://github.com/sainnhe/everforest.git'
 
@@ -217,14 +208,8 @@ Plug 'https://github.com/mhinz/vim-signify.git'
 call plug#end()
 
 """" colors
-"let g:lightline = {'colorscheme': 'catppuccin_mocha'}
-"colorscheme catppuccin_mocha
-"silent! colorscheme catppuccin_frappe
-
-"let g:lightline = {'colorscheme': 'rosepine_moon'}
-"colorscheme rosepine_moon
-
-let g:lightline = {'colorscheme': 'everforest'}
+let g:lightline={'colorscheme': 'everforest'}
+let g:everforest_background='hard'
 colorscheme everforest
 
 " Enable 24-bit RGB colors
