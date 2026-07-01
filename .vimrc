@@ -196,13 +196,17 @@ Plug 'https://github.com/godlygeek/tabular.git'
 Plug 'https://github.com/preservim/vim-markdown.git'
 
 " NERDTree
-Plug 'https://github.com/scrooloose/nerdtree.git'
+Plug 'https://github.com/preservim/nerdtree.git'
 
 " NERD Commenter
-Plug 'https://github.com/scrooloose/nerdcommenter.git'
+Plug 'https://github.com/preservim/nerdcommenter.git'
 
 " signify
 Plug 'https://github.com/mhinz/vim-signify.git'
+
+" vimtex
+Plug 'lervag/vimtex'
+let g:vimtex_view_method='skim'
 
 " Initialize plugin system
 call plug#end()
