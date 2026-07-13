@@ -229,5 +229,7 @@ set termguicolors
 set exrc
 set secure
 
-" Smear cursor
-lua require('smear_cursor').enabled = true
+" Smear cursor (for nvim)
+if has('nvim')
+        lua require('smear_cursor').enabled = true
+endif
