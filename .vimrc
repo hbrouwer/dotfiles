@@ -152,6 +152,10 @@ map <C-s><Down> :tabl<CR>
 map <C-s><Left> :tabp<CR>
 map <C-s><Right> :tabn<CR>
 
+" Enable secure local configs
+set exrc
+set secure
+
 """" plug.vim
 
 " Specify a directory for plugins
@@ -211,10 +215,14 @@ let g:vimtex_view_method='skim'
 " Smear cursor
 Plug 'https://github.com/sphamba/smear-cursor.nvim.git'
 
+" Neoscroll
+Plug 'https://github.com/karb94/neoscroll.nvim.git'
+
 " Initialize plugin system
 call plug#end()
 
 """" colors
+
 let g:lightline={'colorscheme': 'everforest'}
 let g:everforest_background='hard'
 colorscheme everforest
@@ -222,11 +230,11 @@ colorscheme everforest
 " Enable 24-bit RGB colors
 set termguicolors
 
-" Enable secure local configs
-set exrc
-set secure
+"""" nvim (lua) specific
 
-" Smear cursor (for nvim)
 if has('nvim')
+        " Smear cursor (for nvim)
         lua require('smear_cursor').enabled = true
+        " Neoscroll
+        lua require('neoscroll').setup()
 endif
