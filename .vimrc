@@ -205,8 +205,14 @@ Plug 'https://github.com/preservim/nerdcommenter.git'
 Plug 'https://github.com/mhinz/vim-signify.git'
 
 " vimtex
-Plug 'lervag/vimtex'
+Plug 'https://github.com/lervag/vimtex.git'
 let g:vimtex_view_method='skim'
+
+" Smear cursor
+Plug 'https://github.com/sphamba/smear-cursor.nvim.git'
+
+" Neoscroll
+Plug 'https://github.com/karb94/neoscroll.nvim.git'
 
 " Initialize plugin system
 call plug#end()
@@ -222,3 +228,6 @@ set termguicolors
 " Enable secure local configs
 set exrc
 set secure
+
+" Smear cursor
+lua require('smear_cursor').enabled = true
