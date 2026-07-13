@@ -211,9 +211,6 @@ let g:vimtex_view_method='skim'
 " Smear cursor
 Plug 'https://github.com/sphamba/smear-cursor.nvim.git'
 
-" Neoscroll
-Plug 'https://github.com/karb94/neoscroll.nvim.git'
-
 " Initialize plugin system
 call plug#end()
 
