@@ -14,13 +14,13 @@ ZSH_THEME="sorin"
 # Load plugins
 case `uname` in
         Darwin)
-        plugins=(tmux macos fzf z)
-        #plugins=(macos fzf z)
+        plugins=(tmux macos fzf z vi-mode)
+        #plugins=(macos fzf z vi-mode)
         export TERM=screen-256color
         export FZF_BASE=/opt/local/share/fzf
         ;;
         Linux)
-        plugins=(tmux fzf z)
+        plugins=(tmux fzf z vi-mode)
 esac
 
 # Autostart tmux
