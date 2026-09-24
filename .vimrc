@@ -218,9 +218,6 @@ Plug 'https://github.com/sphamba/smear-cursor.nvim.git'
 " Neoscroll
 Plug 'https://github.com/karb94/neoscroll.nvim.git'
 
-" GhostText
-Plug 'https://github.com/subnut/nvim-ghost.nvim.git'
-
 " Initialize plugin system
 call plug#end()
 
